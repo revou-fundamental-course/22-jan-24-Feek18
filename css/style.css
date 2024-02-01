@@ -64,7 +64,7 @@ nav a {
     gap: 24px;
     padding: 8px 98px;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .slider {
@@ -170,8 +170,8 @@ nav a {
         padding: 24px;
     }
 
-    .hero-righ h1 {
-        font-size: 40px;
+    .hero-right h1 {
+        font-size: 38px;
     }
 
     .hero-content {
@@ -181,14 +181,19 @@ nav a {
     .hero-detail,
     .hero-right {
         width: 100%;
+        text-align: left;
     }
 
     .detail-items {
         margin-bottom: 20px;
     }
 
+    .detail-items h1 {
+        font-size: 24px;
+    }
+
     .detail-items p {
-        text-align: center;
+        text-align: left;
     }
 
     .product-title img {
