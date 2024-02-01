@@ -172,6 +172,7 @@ nav a {
 
     .hero-right h1 {
         font-size: 38px;
+        margin-bottom: 36px;
     }
 
     .hero-content {
@@ -187,12 +188,15 @@ nav a {
         margin-bottom: 20px;
     }
 
-    .detail-items h1 {
+    .detail-items h2 {
         font-size: 24px;
+        line-height: 4px;
+        margin-bottom: 18px;
     }
 
     .detail-items p {
         text-align: left;
+        margin-bottom: 18px;
     }
 
     .product-title img {
@@ -258,6 +262,8 @@ nav a {
 
     .footer {
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .footer h1 {
@@ -266,11 +272,14 @@ nav a {
     }
 
     .menu {
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 17px;
     }
 
     .menu p {
-        margin: 0 10px;
+        margin: 20px 0px;
     }
 }
 
