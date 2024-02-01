@@ -204,8 +204,6 @@ nav a {
         flex-direction: column;
     }
 
-    .
-
     .about img {
         width: 500px;
         height: 600px;
@@ -219,6 +217,11 @@ nav a {
 
     article p {
         text-align: left;
+    }
+
+    form {
+        text-align: center;
+        justify-content: center;
     }
 
     .form {
