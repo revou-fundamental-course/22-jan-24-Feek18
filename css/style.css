@@ -7,6 +7,12 @@
     scroll-behavior: smooth;
 }
 
+.main-about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -116,7 +122,7 @@ nav a {
 .hero-right {
     flex: 1;
     padding: 20px;
-    width: 40%;
+    width: 50%;
 }
 
 .hero-right h1 {
@@ -142,13 +148,14 @@ nav a {
     line-height: 26px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+
     header {
         padding: 24px;
     }
 
     .hero {
-        padding: 0px;
+        padding: 18px;
     }
 
     .hero h1 {
@@ -164,11 +171,8 @@ nav a {
     }
 
     .hero-righ h1 {
-        font-size: 4px;
+        font-size: 40px;
     }
-}
-
-@media (max-width: 768px) {
 
     .hero-content {
         flex-direction: column;
@@ -181,6 +185,77 @@ nav a {
 
     .detail-items {
         margin-bottom: 20px;
+    }
+
+    .product-title img {
+        display: none;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about img {
+        width: 500px;
+        height: 600px;
+    }
+
+    article {
+        text-align: left;
+        margin-top: 0;
+        max-width: 600px;
+    }
+
+    .form {
+        padding: 24px;
+        flex-direction: column;
+    }
+
+    .form h1,p {
+        text-align: center;
+    }
+
+    .form p {
+        padding-bottom: 16px;
+    }
+
+    .form img {
+        max-width: 500px;
+        height: 500px;
+
+    }
+
+    .cta h1 {
+        font-size: 1.5em;
+    }
+
+    .cta p {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+    }
+
+    .cta button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer h1 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        justify-content: flex-start;
+    }
+
+    .menu p {
+        margin: 0 10px;
     }
 }
 
@@ -258,6 +333,11 @@ nav a {
   }
 
 @media (max-width:1200px) {
+
+    .about {
+        padding: 32px 128px;
+    }
+
     .product-detail {
         grid-template-columns: repeat(2,1fr);
     }
@@ -270,12 +350,18 @@ nav a {
 }
 
 .about {
-    margin-top: 24px;
     display: flex;
+    align-items: center;
+    margin-top: 24px;
     gap: 42px;
-    padding: 32px 118px;
+    padding: 28px;
     align-items: center;
     justify-content: center;
+} 
+
+.about img {
+    width: 500px;
+    height: 600px;
 }
 
 .about span {
@@ -310,10 +396,16 @@ form {
 
 .form {
     display: flex;
-    padding: 28px 118px;
+    padding: 28px;
     align-items: center;
     justify-content: center;
     gap: 18px;
+}
+
+.main-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .error {
@@ -322,6 +414,8 @@ form {
 
 .form img {
     margin-top: 25px;
+    width: 500px;
+    height: 500px;
 }
 
 .form h1 {
@@ -368,7 +462,7 @@ select {
     background-color: #191919;
     margin-top: 50px;
     display: flex;
-    padding: 38px 118px;
+    padding: 28px;
     align-items: center;
     text-align: center;
     justify-content: center;
